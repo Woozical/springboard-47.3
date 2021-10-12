@@ -25,16 +25,4 @@ function countZeroes(arr, start=0, end=arr.length-1){
     }
 }
 
-// Start in middle, compare middle idx and index to the left, if mid=0 and left=1, we can count from mid
-// if mid=1 and left=1, we need to shift to the right
-// if mid=0 and left=0, we need to shift to the left
-//[1,1,1,1,0,0]
-//[S,X,M,X,X,E] = Mid=1, Mid-1 = 1; shift right, mid+1 is now start
-//[X,X,X,S,M,E] = Mid=0, Mid-1 = 1; we can now count, length-mid (6-4) = 2
-//[1,1,0,0,0,0]
-//[S,X,M,X,X,E]
-//[0,0,0]
-//[S,M,E] = Mid = 0, Left = 0
-//[SM,E,X] = 
-
 module.exports = countZeroes
